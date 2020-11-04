@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">This is a short survey for one of the freeCodeCamp projects.</p>
+        <form id="survey-form">
+            <label id="name-label" for="Name">Name</label><br>
+            <input type="text" id="name" placeholder="Name" name="Name" required><br>
+            <label id="email-label" for="Email">Email</label><br>
+            <input type="email" id="email" placeholder="Email" name="Email" required><br>
+            <label id="number-label" for="Number">Age</label><br>
+            <input type="number" min="12" max="130" id="number" placeholder="Age" name="Number"><br>
+            <select id="dropdown">
+                <option value="Student">Student</option>
+                <option value="Full-time Job">Full-time Job</option>
+            </select>
+
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <input type="radio" name="recommend" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" name="recommend" value="No">
+            <label for="No">No</label><br>
+            <input type="radio" name="recommend" value="Maybe">
+            <label for="Maybe">Maybe</label>
+
+            <p>What would you like to see improved?</p>
+            <input type="checkbox" name="improvements" value="Front-end Projects">
+            <label for="Front-end Projects">Front-end Projects</label><br>
+            <input type="checkbox" name="improvements" value="Back-end Projects">
+            <label for="Back-end Projects">Back-end Projects</label><br>
+            <input type="checkbox" name="improvements" value="Challenges">
+            <label for="Challenges">Challenges</label><br> 
+
+            <p>Any other further comments or suggestions?</p>
+            <textarea>Please enter any additional comments here</textarea><br>
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>
